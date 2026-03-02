@@ -1,0 +1,16 @@
+name: ClawBackup
+description: Automated encrypted backup for OpenClaw data
+version: 1.0.0
+author: OpenKrab
+
+install:
+  - mkdir -p ~/ClawBackups
+  - chmod +x scripts/*.sh hooks/*.sh
+  - prompt: "Enter GPG passphrase:"
+    store: ~/.clawbackup/passphrase
+  - schedule: "0 2 * * *" # Daily at 02:00
+    command: ./scripts/backup.sh
+
+dependencies:
+  - gpg
+  - tar

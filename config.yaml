@@ -1,0 +1,17 @@
+backup_folders:
+  - ~/.openclaw/workspace/.learnings/
+  - ~/.openclaw/memory/
+  - ~/.openclaw/skills/
+  - ~/.openclaw/configs/SOUL.md
+  - ~/.openclaw/configs/AGENTS.md
+
+backup_dir: ~/ClawBackups/
+retention_days: 7
+
+notifications:
+  telegram_webhook: ""  # Fill in your webhook URL
+  discord_webhook: ""  # Fill in your webhook URL
+
+gpg_passphrase: ""  # Set during install
+
+cron_schedule: "0 2 * * *"
