@@ -25,7 +25,7 @@ Retained for 7 days
 ```
 
 ## Backup Flow
-```
+```mermaid
 flowchart TD
 A([Cron Trigger]) --> B[Collect Folders]
 B --> C[Tar + GPG Encrypt]
